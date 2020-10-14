@@ -179,16 +179,19 @@ def view():
          time.sleep(2)
          view()
 def baner():
-    kata('''\033[94m    
-╦╔═\033[00m╔╗╔╔═╗  \033[94m╔╦╗\033[00m╔═╗\033[00m╔═╗╦  ╔═╗
-\033[94m╠╩╗\033[00m║║║╠╣  \033[94m  ║\033[00m ║ ║║ ║║  ╚═╗
-\033[94m╩ \033[00m╩╝╚╝╚    \033[94m ╩ \033[00m╚═╝╚═╝╩═╝╚═╝''')
-    print('\033[41m        Fahmi Apz         \033[00m\n')
+    kata('''
+ \033[32;1m__  __ _      __       
+ \033[32;1m|  \/  | |    / _|        \033[37;1mDevLoper : Faizul      
+ \033[32;1m| \  / | |__ | |_         \033[37;1mWhatsapp : 082271426251   
+ \033[32;1m| |\/| | '_ \|  _|      
+ \033[32;1m| |  | | |_) | |        
+ \033[32;1m|_|__|_|_.__/|_|''')
+    print('\033[41m       \033[31;1mContent\033[37;1mKreator\033[37;1mFaizul         \033[00m\n')
 
 def load():
     for x in range(1,101):
         time.sleep(1./20)
-        print(f"\r\033[00mLoading...\033[91m{x}\033[00m%", end="", flush=True)
+        print(f"#r\033[00mLoading...\033[91m{x}\033[00m%", end="", flush=True)
 def tom():
     clear()
     baner()
@@ -226,10 +229,10 @@ def mbf():
     time.sleep(0.1)
     clear()
     baner()
-    print("\033[96m1).\033[00m Login")
-    print("\033[96m2).\033[00m Logout")
-    print("\033[96m0).\033[00m Back")
-    time.sleep(0.1)
+    print("\033[37;1m1).\033[31;1m Login")
+    print("\033[37;1m2).\033[31;1m Logout")
+    print("\033[37;10).\033[31;1m Back")
+    time.sleep(0.5)
     f=input("\n\033[00m>> \033[1;96m")
     if f == "1":
          clear()
